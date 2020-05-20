@@ -23,11 +23,10 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "VideoEditar", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Detalles", "VideoDetalles", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Borrar", "VideoBorrar", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Editar", "VideoEditar", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Detalles", "VideoDetalles", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Borrar", "VideoDelete", new { id = item.IdVideo })%>
             </td>
-
             <td>
                 <%: item.Nombre %>
             </td>
