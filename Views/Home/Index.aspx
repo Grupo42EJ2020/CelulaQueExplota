@@ -4,11 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Pia Desarrollo de Software</title>
+<link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <title>Aprende Ya!</title>
 </head>
 <body>
-    <h1>
-    PIA 👍
-    </h1>
+    <img src="../../Content/imagenes/handle.png" width="100" height="100" align="left" /> 
+    <FONT face="Oxygen" size="50" dir="ltr"> &nbsp;Aprende Ya! </FONT>
 </body>
 </html>
