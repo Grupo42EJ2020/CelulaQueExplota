@@ -11,5 +11,14 @@
 <body>
     <img src="../../Content/imagenes/handle.png" width="100" height="100" align="left" /> 
     <FONT face="Oxygen" size="50" dir="ltr"> &nbsp;Aprende Ya! </FONT>
+    <br />
+    <br />
+    <br />
+    <br />
+    <center>
+        <a href="/Video/ListaVideos">Lista de Videos</a>
+        <br />
+        <a href="/Tema/ListaTemas">Lista de Temas</a><a
+    </center>
 </body>
 </html>

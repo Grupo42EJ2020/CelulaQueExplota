@@ -11,7 +11,6 @@ namespace MVCLaboratorio.Models
 {
     public class RepositorioVideo : IVideo
     {
-
         public List<Video> obtenerVideos()
         {
             //implementar funcionalidad

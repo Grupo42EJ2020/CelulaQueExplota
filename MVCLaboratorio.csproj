@@ -80,6 +80,10 @@
     <Compile Include="Models\Curso_Tema.cs" />
     <Compile Include="Models\Curso_Tema_Video.cs" />
     <Compile Include="Models\Empleado.cs" />
+    <Compile Include="Models\ITema.cs" />
+    <Compile Include="Models\IVideo.cs" />
+    <Compile Include="Models\RepositorioTema.cs" />
+    <Compile Include="Models\RepositorioVideo.cs" />
     <Compile Include="Models\Tema.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +93,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Tema\ListaTemas.aspx" />
+    <Content Include="Views\Video\ListaVideos.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

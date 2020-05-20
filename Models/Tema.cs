@@ -8,6 +8,6 @@ namespace MVCLaboratorio.Models
     public class Tema
     {
         public int IdTema { get; set; }
-        public int Nombre { get; set; }
+        public string Nombre { get; set; }
     }
 }
