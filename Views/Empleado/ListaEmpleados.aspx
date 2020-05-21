@@ -48,7 +48,10 @@
     <p>
         <b><%: Html.ActionLink("(+) Agregar Empleado", "EmpleadoCreate") %></b>
     </p>
-
+    <br />
+    <br />
+    <br />
+    <a href="/Home/Index">Home</a>
 </body>
 </html>
 

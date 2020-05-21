@@ -48,6 +48,10 @@
     <p>
         <%: Html.ActionLink("(+) Agregar Curso", "CursoCreate") %>
     </p>
+    <br />
+    <br />
+    <br />
+    <a href="/Home/Index">Home</a>
 
 </body>
 </html>

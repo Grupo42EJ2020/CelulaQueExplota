@@ -54,7 +54,10 @@
     <p>
         <%: Html.ActionLink("(+) Asignar Curso a Tema", "CTCreate")%>
     </p>
-
+    <br />
+    <br />
+    <br />
+    <a href="/Home/Index">Home</a>
 </body>
 </html>
 

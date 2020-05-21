@@ -19,8 +19,8 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
-        public ActionResult ListaCursos()
-        {
+        public ActionResult ListaEmpleados()
+        { 
             return View(repoEmpleado.obtenerEmpleados());
         }
         //CREAR

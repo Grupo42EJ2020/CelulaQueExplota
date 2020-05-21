@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MVCLaboratorio.Models.Tema>>" %>
+﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MVCLaboratorio.Models.Curso_Tema_Video>>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Lista de Temas</title>
+    <title>Lista de Videos del Curso</title>
     <link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
     <style type="text/css">
     html, body
@@ -17,13 +17,14 @@
     </style>
 </head>
 <body>
-    <center>
-    <h1>Lista de temas disponibles</h1></center>
     <table>
         <tr>
             <th></th>
             <th>
-                Tema
+                IdCT
+            </th>
+            <th>
+                IdVideo
             </th>
         </tr>
 
@@ -31,12 +32,15 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "TemaEditar", new { id = item.IdTema })%> |
-                <%: Html.ActionLink("Detalles", "TemaDetalles", new { id = item.IdTema })%> |
-                <%: Html.ActionLink("Borrar", "TemaDelete", new { id = item.IdTema })%>
+                <%: Html.ActionLink("Editar", "CTVEdit", new { id = item.IdCTV })%> |
+                <%: Html.ActionLink("Detalles", "CTVDetails", new { id = item.IdCTV })%> |
+                <%: Html.ActionLink("Borrar", "CTVDelete", new { id = item.IdCTV })%>
             </td>
             <td>
-                <%: item.Nombre %>
+                <%: item.IdCT %>
+            </td>
+            <td>
+                <%: item.IdVideo %>
             </td>
         </tr>
     
@@ -45,7 +49,7 @@
     </table>
 
     <p>
-        <b><%: Html.ActionLink("(+) Agregar Tema", "TemaCreate")%></b> 
+        <%: Html.ActionLink("(+) Asignar video a Curso/Tema", "CTVCreate")%>
     </p>
     <br />
     <br />

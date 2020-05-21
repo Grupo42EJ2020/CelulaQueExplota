@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Curso_Tema>" %>
+﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Curso_Tema_Video>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Relacionar Curso con Tema</title>
+    <title>Editar Relacion</title>
     <link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
     <style type="text/css">
     html, body
@@ -41,35 +41,35 @@
 <body>
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
-
+        
         <fieldset>
-            <legend>Ingrese los datos</legend>
+            <legend>Datos</legend>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.IdCurso) %>
+                <%: Html.LabelFor(model => model.IdCT) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.IdCurso) %>
-                <%: Html.ValidationMessageFor(model => model.IdCurso) %>
+                <%: Html.TextBoxFor(model => model.IdCT) %>
+                <%: Html.ValidationMessageFor(model => model.IdCT) %>
             </div>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.IdTema) %>
+                <%: Html.LabelFor(model => model.IdVideo) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.IdTema) %>
-                <%: Html.ValidationMessageFor(model => model.IdTema) %>
+                <%: Html.TextBoxFor(model => model.IdVideo) %>
+                <%: Html.ValidationMessageFor(model => model.IdVideo) %>
             </div>
             
             <p>
-                <input type="submit" value="Crear" />
+                <input type="submit" value="Guardar" />
             </p>
         </fieldset>
 
     <% } %>
 
     <div>
-        <%: Html.ActionLink("Regresar", "ListaCTS") %>
+        <%: Html.ActionLink("Regresar", "ListaCTVS") %>
     </div>
 
 </body>

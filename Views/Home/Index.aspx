@@ -56,6 +56,8 @@
         <a href="/Curso/ListaCursos">Cursos</a>
         <br />
         <a href="/Curso_Tema/ListaCTS">Cursos con Temas</a>
+        <br />
+        <a href="/Curso_Tema_Video/ListaCTVS">Videos Cursos/Temas</a>
     </center>
 </body>
 </html>

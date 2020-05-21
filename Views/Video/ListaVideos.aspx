@@ -54,7 +54,10 @@
         <b>
         <%: Html.ActionLink("(+) Agregar video", "VideoCreate") %> </b>
     </p>
-
+    <br />
+    <br />
+    <br />
+    <a href="/Home/Index">Home</a>
 </body>
 </html>
 
