@@ -17,7 +17,8 @@
     </style>
 </head>
 <body>
-    <h1>Lista de temas disponibles</h1>
+    <center>
+    <h1>Lista de temas disponibles</h1></center>
     <table>
         <tr>
             <th></th>

@@ -47,9 +47,11 @@
     <br />
     <br />
     <center>
-        <a href="/Video/ListaVideos">Lista de Videos</a>
+        <a href="/Video/ListaVideos">Videos</a>
         <br />
-        <a href="/Tema/ListaTemas">Lista de Temas</a><a
+        <a href="/Tema/ListaTemas">Temas</a>
+        <br />
+        <a href="/Empleado/ListaEmpleados">Empleados</a>
     </center>
 </body>
 </html>

@@ -39,7 +39,8 @@
     </style>
 </head>
 <body>
-    <h3>¿Estas seguro de eliminar el tema?</h3>
+    <center>
+    <h3>¿Estas seguro de eliminar el tema?</h3> </center>
     <fieldset>
         <legend>Datos del tema</legend>
         

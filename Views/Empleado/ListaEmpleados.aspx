@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MVCLaboratorio.Models.Video>>" %>
+﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MVCLaboratorio.Models.Empleado>>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Lista de Videos</title>
+    <title>Lista de Empleados</title>
     <link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
     <style type="text/css">
     html, body
@@ -18,31 +18,26 @@
 </head>
 <body>
     <center>
-    <h1>
-    Lista de Videos</h1></center>
+    <h1>Lista de Empleados
+    </h1></center>
     <table>
         <tr>
             <th></th>
             <th>
-                <b>Nombre</b>
-            </th>
-            <th>
-                <b>Url</b>
+                Empleados
             </th>
         </tr>
 
     <% foreach (var item in Model) { %>
+    
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "VideoEditar", new { id = item.IdVideo })%> |
-                <%: Html.ActionLink("Detalles", "VideoDetalles", new { id = item.IdVideo })%> |
-                <%: Html.ActionLink("Borrar", "VideoDelete", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Editar", "EmpleadoEdit", new { id=item.IdEmpleado }) %> |
+                <%: Html.ActionLink("Detalles", "EmpleadoDetails", new { id = item.IdEmpleado })%> |
+                <%: Html.ActionLink("Borrar", "EmpleadoDelete", new { id = item.IdEmpleado })%>
             </td>
             <td>
                 <%: item.Nombre %>
-            </td>
-            <td>
-                <%: item.Url %>
             </td>
         </tr>
     
@@ -51,8 +46,7 @@
     </table>
 
     <p>
-        <b>
-        <%: Html.ActionLink("(+) Agregar video", "VideoCreate") %> </b>
+        <b><%: Html.ActionLink("(+) Agregar Empleado", "EmpleadoCreate") %></b>
     </p>
 
 </body>
