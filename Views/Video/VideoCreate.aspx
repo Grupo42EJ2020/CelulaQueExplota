@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Agregar video</title>
+    <title>Nuevo video</title>
     <link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
     <style type="text/css">
     html, body
@@ -39,6 +39,8 @@
     </style>
 </head>
 <body>
+    <h1>
+    ¡Agrega un nuevo video!</h1>
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
 

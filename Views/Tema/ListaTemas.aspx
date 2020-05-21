@@ -17,11 +17,12 @@
     </style>
 </head>
 <body>
+    <h1>Lista de temas disponibles</h1>
     <table>
         <tr>
             <th></th>
             <th>
-                Nombre
+                Tema
             </th>
         </tr>
 
@@ -31,7 +32,7 @@
             <td>
                 <%: Html.ActionLink("Editar", "TemaEditar", new { id = item.IdTema })%> |
                 <%: Html.ActionLink("Detalles", "TemaDetalles", new { id = item.IdTema })%> |
-                <%: Html.ActionLink("Borrar", "TemaBorrar", new { id = item.IdTema })%>
+                <%: Html.ActionLink("Borrar", "TemaDelete", new { id = item.IdTema })%>
             </td>
             <td>
                 <%: item.Nombre %>
@@ -43,7 +44,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Crear Tema", "TemaCreate")%>
+        <b><%: Html.ActionLink("(+) Agregar Tema", "TemaCreate")%></b> 
     </p>
 
 </body>

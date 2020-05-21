@@ -94,6 +94,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Tema\ListaTemas.aspx" />
+    <Content Include="Views\Tema\TemaCreate.aspx" />
+    <Content Include="Views\Tema\TemaDelete.aspx" />
+    <Content Include="Views\Tema\TemaDetalles.aspx" />
+    <Content Include="Views\Tema\TemaEditar.aspx" />
     <Content Include="Views\Video\ListaVideos.aspx" />
     <Content Include="Views\Video\VideoDelete.aspx" />
     <Content Include="Views\Video\VideoCreate.aspx" />

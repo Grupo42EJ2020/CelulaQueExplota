@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Video>" %>
+﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Tema>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Detalles de video</title>
+    <title>Detalles de tema</title>
     <link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
     <style type="text/css">
     html, body
@@ -40,24 +40,18 @@
 </head>
 <body>
     <fieldset>
-        <legend><b>Detalles</b></legend>
+        <legend>Detalles</legend>
         
-        <b><div class="display-label">IdVideo</div></b>
-        <div class="display-field"><%: Model.IdVideo %></div>
+        <div class="display-label">IdTema</div>
+        <div class="display-field"><%: Model.IdTema %></div>
         
-        <b><div class="display-label">Nombre</div></b>
+        <div class="display-label">Nombre</div>
         <div class="display-field"><%: Model.Nombre %></div>
-        
-        <b><div class="display-label">Url</div></b>
-        <div class="display-field"><%: Model.Url %></div>
-        
-        <b><div class="display-label">FechaPublicacion</div></b>
-        <div class="display-field"><%: String.Format("{0:g}", Model.FechaPublicacion) %></div>
         
     </fieldset>
     <p>
-        <%: Html.ActionLink("Editar", "VideoEditar", new { id=Model.IdVideo })%> |
-        <%: Html.ActionLink("Regresar", "ListaVideos")%>
+        <%: Html.ActionLink("Editar", "TemaEditar", new { id = Model.IdTema })%> |
+        <%: Html.ActionLink("Regresar", "ListaTemas") %>
     </p>
 
 </body>

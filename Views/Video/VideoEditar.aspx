@@ -46,14 +46,6 @@
             <legend>Datos de video</legend>
             
             <div class="editor-label">
-                <%: Html.LabelFor(model => model.IdVideo) %>
-            </div>
-            <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.IdVideo) %>
-                <%: Html.ValidationMessageFor(model => model.IdVideo) %>
-            </div>
-            
-            <div class="editor-label">
                 <%: Html.LabelFor(model => model.Nombre) %>
             </div>
             <div class="editor-field">
