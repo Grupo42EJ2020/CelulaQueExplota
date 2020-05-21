@@ -54,6 +54,8 @@
         <a href="/Empleado/ListaEmpleados">Empleados</a>
         <br />
         <a href="/Curso/ListaCursos">Cursos</a>
+        <br />
+        <a href="/Curso_Tema/ListaCTS">Cursos con Temas</a>
     </center>
 </body>
 </html>

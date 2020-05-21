@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Curso>" %>
+﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Curso_Tema>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Eliminar Curso</title>
+    <title>CTDelete</title>
     <link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
     <style type="text/css">
     html, body, submit
@@ -40,24 +40,24 @@
 </head>
 <body>
     <center>
-    <h3>¿Seguro de que quieres borrar este curso?</h3> </center>
+    <h3>¿Seguro de que quieres borrar esta relacion?</h3> </center>
     <fieldset>
-        <legend>Datos del Curso</legend>
+        <legend>Datos</legend>
+        
+        <div class="display-label">IdCT</div>
+        <div class="display-field"><%: Model.IdCT %></div>
         
         <div class="display-label">IdCurso</div>
         <div class="display-field"><%: Model.IdCurso %></div>
         
-        <div class="display-label">Descripcion</div>
-        <div class="display-field"><%: Model.Descripcion %></div>
-        
-        <div class="display-label">IdEmpleado</div>
-        <div class="display-field"><%: Model.IdEmpleado %></div>
+        <div class="display-label">IdTema</div>
+        <div class="display-field"><%: Model.IdTema %></div>
         
     </fieldset>
     <% using (Html.BeginForm()) { %>
         <p>
-		    <input type="submit" value="Eliminar" /> |
-		    <%: Html.ActionLink("Regresar", "ListaCursos") %>
+		    <input type="submit" value="Delete" /> |
+		    <%: Html.ActionLink("Regresar", "ListaCTS") %>
         </p>
     <% } %>
 

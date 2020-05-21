@@ -81,10 +81,12 @@
     <Compile Include="Models\Curso_Tema_Video.cs" />
     <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\ICurso.cs" />
+    <Compile Include="Models\ICurso_Tema.cs" />
     <Compile Include="Models\IEmpleado.cs" />
     <Compile Include="Models\ITema.cs" />
     <Compile Include="Models\IVideo.cs" />
     <Compile Include="Models\RepositorioCurso.cs" />
+    <Compile Include="Models\RepositorioCurso_Tema.cs" />
     <Compile Include="Models\RepositorioEmpleado.cs" />
     <Compile Include="Models\RepositorioTema.cs" />
     <Compile Include="Models\RepositorioVideo.cs" />
@@ -101,6 +103,11 @@
     <Content Include="Views\Curso\CursoDetails.aspx" />
     <Content Include="Views\Curso\CursoEdit.aspx" />
     <Content Include="Views\Curso\ListaCursos.aspx" />
+    <Content Include="Views\Curso_Tema\CTCreate.aspx" />
+    <Content Include="Views\Curso_Tema\CTDelete.aspx" />
+    <Content Include="Views\Curso_Tema\CTDetails.aspx" />
+    <Content Include="Views\Curso_Tema\CTEdit.aspx" />
+    <Content Include="Views\Curso_Tema\ListaCTS.aspx" />
     <Content Include="Views\Empleado\EmpleadoCreate.aspx" />
     <Content Include="Views\Empleado\EmpleadoDelete.aspx" />
     <Content Include="Views\Empleado\EmpleadoDetails.aspx" />
