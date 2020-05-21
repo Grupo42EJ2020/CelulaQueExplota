@@ -97,6 +97,8 @@
     <Content Include="Views\Video\ListaVideos.aspx" />
     <Content Include="Views\Video\VideoDelete.aspx" />
     <Content Include="Views\Video\VideoCreate.aspx" />
+    <Content Include="Views\Video\VideoDetalles.aspx" />
+    <Content Include="Views\Video\VideoEditar.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

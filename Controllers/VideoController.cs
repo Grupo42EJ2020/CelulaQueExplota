@@ -49,5 +49,24 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("ListaVideos");
         }
 
+        //DETALLES
+        public ActionResult VideoDetalles(int id)
+        {
+            return View(repoVideo.obtenerVideo(id));
+        }
+
+        //EDITAR
+        public ActionResult VideoEditar(int id)
+        {
+            return View(repoVideo.obtenerVideo(id));
+        }
+        [HttpPost]
+        public ActionResult VideoEditar(int id, Video datosVideo)
+        {
+            datosVideo.IdVideo = id;
+            repoVideo.actualizarVideo(datosVideo);
+            return RedirectToAction("ListaVideos");
+        }
+
     }
 }

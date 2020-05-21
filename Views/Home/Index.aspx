@@ -6,6 +6,37 @@
 <head runat="server">
 <link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
 <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+<style type="text/css">
+    html, body
+    {
+    width: 100%;
+    height: 110%; 
+    background: #FFFFFF;
+    font-family: Helvetica; 
+    }
+    a:link, a:visited{
+    text-decoration: none;
+    padding: 20px;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 200;
+    font-size: 20px;
+    color: black;
+    width:200px;
+    height:25px;
+    text-align:center;
+    display: inline-block;
+    margin: 20px 20px 0 20px;
+    background-color: #d3dde0;
+    }
+    a:hover{
+    color: #4c5557;
+    background-color: #dff2f7;
+    text-decoration: none;
+    }
+    </style>
     <title>Aprende Ya!</title>
 </head>
 <body>

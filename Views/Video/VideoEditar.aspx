@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Agregar video</title>
+    <title>Editar video</title>
     <link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
     <style type="text/css">
     html, body
@@ -41,12 +41,20 @@
 <body>
     <% using (Html.BeginForm()) {%>
         <%: Html.ValidationSummary(true) %>
-
+        
         <fieldset>
-            <legend>Ingrese los Datos</legend>
+            <legend>Datos de video</legend>
             
             <div class="editor-label">
-                <b><%: Html.LabelFor(model => model.Nombre) %></b>
+                <%: Html.LabelFor(model => model.IdVideo) %>
+            </div>
+            <div class="editor-field">
+                <%: Html.TextBoxFor(model => model.IdVideo) %>
+                <%: Html.ValidationMessageFor(model => model.IdVideo) %>
+            </div>
+            
+            <div class="editor-label">
+                <%: Html.LabelFor(model => model.Nombre) %>
             </div>
             <div class="editor-field">
                 <%: Html.TextBoxFor(model => model.Nombre) %>
@@ -54,7 +62,7 @@
             </div>
             
             <div class="editor-label">
-               <b> <%: Html.LabelFor(model => model.Url) %></b>
+                <%: Html.LabelFor(model => model.Url) %>
             </div>
             <div class="editor-field">
                 <%: Html.TextBoxFor(model => model.Url) %>
@@ -62,15 +70,15 @@
             </div>
             
             <div class="editor-label">
-               <b> <%: Html.LabelFor(model => model.FechaPublicacion) %></b>
+                <%: Html.LabelFor(model => model.FechaPublicacion) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.FechaPublicacion) %>
+                <%: Html.TextBoxFor(model => model.FechaPublicacion, String.Format("{0:g}", Model.FechaPublicacion)) %>
                 <%: Html.ValidationMessageFor(model => model.FechaPublicacion) %>
             </div>
             
             <p>
-                <input type="submit" value="Create" />
+                <input type="submit" value="Guardar" />
             </p>
         </fieldset>
 

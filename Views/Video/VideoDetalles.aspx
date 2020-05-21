@@ -4,10 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Elimiar video</title>
+    <title>Detalles de video</title>
     <link  rel="icon"   href="../../Content/imagenes/handle.png" type="image/png" />
     <style type="text/css">
-    html, body, submit
+    html, body
     {
     width: 100%;
     height: 110%; 
@@ -39,29 +39,26 @@
     </style>
 </head>
 <body>
-    <h3>¿Estas seguro de borrar este video?</h3>
     <fieldset>
-        <legend>Datos del video</legend>
+        <legend><b>Detalles</b></legend>
         
-        <div class="display-label">IdVideo</div>
+        <b><div class="display-label">IdVideo</div></b>
         <div class="display-field"><%: Model.IdVideo %></div>
         
-        <div class="display-label">Nombre</div>
+        <b><div class="display-label">Nombre</div></b>
         <div class="display-field"><%: Model.Nombre %></div>
         
-        <div class="display-label">Url</div>
+        <b><div class="display-label">Url</div></b>
         <div class="display-field"><%: Model.Url %></div>
         
-        <div class="display-label">FechaPublicacion</div>
+        <b><div class="display-label">FechaPublicacion</div></b>
         <div class="display-field"><%: String.Format("{0:g}", Model.FechaPublicacion) %></div>
         
     </fieldset>
-    <% using (Html.BeginForm()) { %>
-        <p>
-		    <input type="submit" value="Borrar" /> |
-		    <%: Html.ActionLink("Regresar", "ListaVideos")%>
-        </p>
-    <% } %>
+    <p>
+        <%: Html.ActionLink("Editar", "VideoEditar", new { /* id=Model.PrimaryKey */ })%> |
+        <%: Html.ActionLink("Regresar", "ListaVideos")%>
+    </p>
 
 </body>
 </html>
