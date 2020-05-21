@@ -52,6 +52,8 @@
         <a href="/Tema/ListaTemas">Temas</a>
         <br />
         <a href="/Empleado/ListaEmpleados">Empleados</a>
+        <br />
+        <a href="/Curso/ListaCursos">Cursos</a>
     </center>
 </body>
 </html>
